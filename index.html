@@ -153,7 +153,7 @@
 
     const gstlist = {
 
-        uj: "Umang & Jayana",
+        uj: "Mr. & Mrs. Umang & Jayana Pandit",
         np: "Mr. & Mrs. Nilesh Patel",
         ds: "Mr. & Mrs. Dipak Sharma",
         dt: "Mr. & Mrs. Dilip Thakkar",
@@ -170,19 +170,45 @@
 
         kr: "Mr. & Mrs. Ketan Rajvadiya",
         hv: "Mr. & Mrs. Hirenkumar Vekariya",
+        ts: "Mr. & Mrs. Tejas Sheth",
+        dk: "Dinesh & Kakku Bhabhi",
+        ls: "Mr. & Mrs. Lalit Shingadiya",
+        sm: "Mr. & Mrs. Shambhu Madhesiya",
+        nyp: "Nayanaa & Prashant",
+        nh: "Nirali & Harsh",
+        nm: "Manushree & Maulik",
 
-        jc: "Jaspalsinh  & Toral ",
+        hb: "Mr. & Mrs. Harsh Bhatt",
+        rb: "Mr. & Mrs. Rakesh Bhalani",
+        ks: "Mr. & Mrs. Khushal Sharma",
+        dp: "Mr. & Mrs. Dhruval Patel",
+        kb: "Mr. & Mrs. Kirit Bhetariya",
+        ac: "Ajay Chavada & Family",
+        mm: "Mr. & Mrs. Mrunal Mistry",
+        bw: "Mr. & Mrs. Bhagirath Wala",
+        sp: "Mr. & Mrs. Sapan Parikh",
+        jt: "Mr. & Mrs. Jay Thakkar",
+
+        devb: "Mr. & Mrs. Devadatt Bharai",
+
+
+        jc: "Mr. & Mrs. Jaspalsinh & Toral Chauhan",
+        rt: "Mr. & Mrs. Rakesh Tiwari",
+        kys: "Mr. & Mrs. Keyur Surti",
+        ap: "Mr. & Mrs. Arpan Patel",
+
 
         sr: "Suresh & Rutvija",
         sri: "Shashi & Rita ",
         bv: "Mr. & Mrs. Bhavin Vachhani",
         ak: "Mr. & Mrs. Akaash",
         sb: "Mr. & Mrs. Sanket Bhalodiya",
-        sb: "Mr. & Mrs. Sanket Bhalodiya",
+
+
 
     };
     const params = new URLSearchParams(window.location.search)
-    let gstName = params.get("gstname");
+    let gstName = params.get("gn");
     if (gstName !== undefined && gstName !== "") {
         if (gstlist[gstName] === undefined) {
             document.getElementById("gstname").innerHTML = "Friends/Family"
